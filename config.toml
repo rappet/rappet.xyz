@@ -1,3 +1,41 @@
 baseURL = "https://rappet.xyz/"
 languageCode = "en-us"
 title = "rappet's Blog"
+theme = hello-friend-ng
+paginate = 10
+
+[params]
+	dateform = "Jan 2, 2006"
+	dateformShort = "Jan 2"
+	dateformNum = "2006-02-01"
+	dateformNumTime = "2006-02-01T15:04 +0200"
+
+	homeSubtitle = "My thoughs"
+	# Metadata mostly used in document's head
+  description = "rappet's thoughs"
+  keywords = "blog, rappet"
+  images = [""]
+
+	defaultTheme = "dark"
+
+[taxonomies]
+	category = "blog"
+	tag      = "tags"
+	series   = "series"
+
+[languages]
+	[languages.en]
+		title = "rappet's blog"
+		subtitle = "my thoughs"
+		keywords = ""
+		copyright = '(c) Raphael Peters 2020'
+		readOtherPosts = "Read other posts"
+
+		[languages.en.params.logo]
+			logoText = "Home"
+			logoHomeLink = "/"
+
+[[menu.main]]
+	identifier = "blog"
+	name       = "Blog"
+	url        = "/posts"
