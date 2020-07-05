@@ -1,7 +1,7 @@
 baseURL = "https://rappet.xyz/"
 languageCode = "en-us"
 title = "rappet's Blog"
-theme = hello-friend-ng
+theme = "hello-friend-ng"
 paginate = 10
 
 [params]
@@ -16,7 +16,27 @@ paginate = 10
   keywords = "blog, rappet"
   images = [""]
 
-	defaultTheme = "dark"
+	defaultTheme = "light"
+
+	[[params.social]]
+		name = "twitter"
+		url = "https://twitter.com"
+
+	[[params.social]]
+		name = "email"
+		url = "mailto:raphael.r.peters@gmail.com"
+
+	[[params.social]]
+		name = "github"
+		url = "https://github.com/rappet"
+
+#  [[params.social]]
+#    name = "gitlab"
+#    url = "https://gitlab.com/rappet"
+
+  [[params.social]]
+    name = "dev"
+    url = "https://git.rappet.xyz/rappet"
 
 [taxonomies]
 	category = "blog"
@@ -32,7 +52,7 @@ paginate = 10
 		readOtherPosts = "Read other posts"
 
 		[languages.en.params.logo]
-			logoText = "Home"
+			logoText = "rappet's blog"
 			logoHomeLink = "/"
 
 [[menu.main]]
